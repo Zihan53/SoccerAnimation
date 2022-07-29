@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CPSC 426 Assignment 2 Jan 2022</title>
+    <style>
+      body { margin: 0; } canvas {width: 100%;
+      height: 100% }
+    </style>
+  </head>
+  <body>
+    <div id="canvas"></div>
+
+<!---- Custom shader definitions;  not used in the default template code ---->
+
+<script id="customVertexShader" type="x-shader/x-vertex">
+varying vec3 varyingNormal;
+void main()
+{
+        varyingNormal = normal;
+	vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+	gl_Position = projectionMatrix * mvPosition;
+}
+</script>
+
+<script id="customFragmentShader" type="x-shader/x-fragment">
+uniform sampler2D floorTexture;
+varying vec3 varyingNormal;
+void main( void ) {
+
+    // Set final rendered color according to the surface normal
+  vec3 N = normalize(varyingNormal);
+// vec3 N = vec3(1.0,0.0,0.0);
+  gl_FragColor = vec4(N.x,N.y,N.z, 1.0);
+}
+</script>
+
+<script id="amadilloVertexShader" type="x-shader/x-vertex">
+uniform vec3 orbPosition;
+varying float intensity;
+varying float dis;
+    
+void main() {
+  vec3 light = vec3(modelMatrix * vec4(position, 1.0)) - orbPosition;
+  vec3 lightNorm = normalize(light);
+  vec3 normalNorm = normalize(normal);
+  intensity = dot(vec3(lightNorm[0], -lightNorm[1], lightNorm[2]), normalNorm); // REPLACE ME
+    
+  dis = length(light);
+  gl_Position = projectionMatrix * viewMatrix * modelMatrix * vec4(position, 1.0);
+}
+</script>
+    
+<script id="amadilloFragmentShader" type="x-shader/x-fragment">
+varying float dis;
+varying float intensity;
+      
+void main() {
+  gl_FragColor = dis <= 4.5 ? vec4(intensity*vec3(1.0,1.0,1.0) + vec3(0.0, 0.75, 0.0), 1.0) : vec4(intensity*vec3(1.0,1.0,1.0), 1.0); // REPLACE ME
+}
+</script>
+
+
+  <!--  threejs and related libraries --> 
+
+<script src="js/three.min.js"></script> 
+<script src="js/OBJLoader.js"></script>
+<script src="js/GLTFLoader.js"></script>
+<script src="js/SourceLoader.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/KeyboardState.js"></script> <!-- By Jerome Etienne: http://jetienne.com/ -->
+
+  <!--  Assignment template code --> 
+
+<script src="motion.js"></script>
+<script src="scene.js"></script>
+<script src="warp.js"></script>
+<script src="luxo.js"></script>
+<script src="pencil.js"></script>
+<script src="soccer.js"></script>
+<script src="bird.js"></script>
+<script src="spline.js"></script>
+<script src="kfs.js"></script>
+
+</body>
+</html>
+

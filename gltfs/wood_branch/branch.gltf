@@ -1,0 +1,296 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 5464,
+      "max": [
+        13.26140022277832,
+        7.7368001937866211,
+        3.2481999397277832
+      ],
+      "min": [
+        -12.249899864196777,
+        -0.42460000514984131,
+        -4.8362002372741699
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 65568,
+      "componentType": 5126,
+      "count": 5464,
+      "max": [
+        0.99811345338821411,
+        0.99954181909561157,
+        0.99999082088470459
+      ],
+      "min": [
+        -0.99976164102554321,
+        -0.99989449977874756,
+        -0.9999549388885498
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 5464,
+      "max": [
+        0.99747741222381592,
+        0.99933755397796631,
+        0.99974542856216431,
+        1
+      ],
+      "min": [
+        -0.99927210807800293,
+        -0.99975985288619995,
+        -0.9982333779335022,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 5464,
+      "max": [
+        0.99800002574920654,
+        0.99830001592636108
+      ],
+      "min": [
+        0.00039999998989515007,
+        0.00050000002374872565
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 28230,
+      "max": [
+        5463
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "tosbin (https://sketchfab.com/tosbin)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/670096e893f44431bd9107a08d05e67d",
+      "title": "Wood Branch"
+    },
+    "generator": "Sketchfab-3.23.3",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 112920,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 43712,
+      "byteOffset": 112920,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 131136,
+      "byteOffset": 156632,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 87424,
+      "byteOffset": 287768,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 375192,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Aset_wood_branch_M_pjpsN_LOD0_1Mat_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Aset_wood_branch_M_pjpsN_LOD0_1Mat_normal.png"
+    },
+    {
+      "uri": "textures/Aset_wood_branch_M_pjpsN_LOD0_1Mat_baseColor.jpg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Aset_wood_branch_M_pjpsN_LOD0_1Mat",
+      "normalTexture": {
+        "index": 1,
+        "scale": 0.50171493899999997,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 0,
+        "strength": 0.35537347559999999,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "roughnessFactor": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Aset_wood_branch_M_pjpsN_LOD0_1_Aset_wood_branch_M_pjpsN_LOD0_1Mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "7095fe12ef8a4310af422c5b57d6a884.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "Aset_wood_branch_M_pjpsN_LOD0_root"
+    },
+    {
+      "children": [
+        6
+      ],
+      "name": "Aset_wood_branch_M_pjpsN_LOD0_1"
+    },
+    {
+      "mesh": 0,
+      "name": "Aset_wood_branch_M_pjpsN_LOD0_1_Aset_wood_branch_M_pjpsN_LOD0_1Mat_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
+
